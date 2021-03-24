@@ -8,6 +8,7 @@ const {
 
 const app = express();
 app.use(express.json());
+app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
 app.get('/', (req, res) => {
   res.send('hello world');
