@@ -1,4 +1,5 @@
 const express = require('express');
+var enforce = require('express-sslify');
 const {
   getCharacters,
   getCharacterById,
